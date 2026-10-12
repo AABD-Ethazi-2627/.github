@@ -60,6 +60,7 @@ Erronka hau erakundeko 5 talde espezializatuk garatzen dute aldi berean:
 * 📁 **C-taldea**
 * 📁 **D-taldea**
 * 📁 **E-taldea**
+
 Talde bakoitzak bere GitHub biltegia du esleituta bere aurrerapena, commit-ak eta kodearen bertsio-kudeaketa aurrera eramateko, erakundeko proiektu-taulari (Kanban / Gantt) zuzenean lotuta.
 ---
 ## 📊 6. Ebaluazioa eta Entregagarriak
@@ -69,7 +70,7 @@ Talde bakoitzak bere GitHub biltegia du esleituta bere aurrerapena, commit-ak et
 | **2. Fasea — ML Entrenamendua** | **% 40** | EDA justifikatua, klase-desorekaren kudeaketa, Recall balioak, kode garbia. |
 | **3. Fasea — Ekoizpena eta Integrazioa**| **% 20** | FastAPI zerbitzaria, NiFi HTTP integrazioa, alerta-sistema automatizatua. |
 | **AI Agenteen Erabilera** | **% 5** | Prompt ingeniaritza eta laguntza-tresnen erabilera kritiko eta arduratsua. |
-> 🎁 **Puntu Gehigarriak (+5):** Feature engineering berritzailea, eredu anitzen benchmark-a (RF vs XGBoost), edo APIaren proba automatizatuak (`pytest`).
+> 🎁 **Puntu Gehigarriak (+5):** Feature engineering berritzailea, eredu anitzen benchmark-a (RF vs XGBoost), makina bakoitzaren estatistikak bereizturik erakustea multzoan beharrean edo APIaren proba automatizatuak (`pytest`).
 ### 🎤 Amaierako Defentsa (10 minutu taldeko)
 1. **Live Demo (2 min):** Simuladorearen datuak Kibanan mugitzen erakutsi.
 2. **Data Science Justifikazioa (3 min):** Hartutako erabakiak, metrikak eta Recall-aren garrantzia azaldu.
