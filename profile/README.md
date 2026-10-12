@@ -64,7 +64,7 @@ Erronka hau erakundeko 5 talde espezializatuk garatzen dute aldi berean:
 Talde bakoitzak bere GitHub biltegia du esleituta bere aurrerapena, commit-ak eta kodearen bertsio-kudeaketa aurrera eramateko, erakundeko proiektu-taulari (Kanban / Gantt) zuzenean lotuta.
 ---
 ## 📊 6. Ebaluazioa eta Entregagarriak
-| Atal Ebaluagarria | Pisua | Gakoak |
+| Atal Ebaluagarria | Pisua (denboran) | Gakoak |
 |---|---|---|
 | **1. Fasea — Big Data Pipeline** | **% 35** | Filebeat eraginkorra, NiFi fluxu garbia, ES indexazioa, Kibana 1. panela. |
 | **2. Fasea — ML Entrenamendua** | **% 40** | EDA justifikatua, klase-desorekaren kudeaketa, Recall balioak, kode garbia. |
