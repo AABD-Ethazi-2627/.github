@@ -10,7 +10,7 @@ Datu-ingeniaritza eta Adimen Artifiziala uztartuz, **mantentze prediktiboko sist
 ---
 ## 🏗️ 2. Arkitektura Globala
 Sistema bi mundu nagusik osatzen dute: **Irakaslearen Azpiegitura** (fabrikako sentsoreak simulatzen dituena) eta **Ikasleen Stack-a** (Big Data & AI hoditeria osoa).
-![Sistema Osoa](./ikaslea/irudiak/SistemaOsoa.png)
+
 ```mermaid
 flowchart LR
     A["Simuladorea (CSV)"] -->|Samba / NFS| B["Filebeat"]
