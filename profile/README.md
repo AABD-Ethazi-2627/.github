@@ -26,21 +26,21 @@ flowchart LR
 ## 🗺️ 3. Lan-Ibilbidea: 3 Fase Nagusiak
 Erronkak 4 asteko iraupena du (~45 ordu) eta hiru fase sekuentzialetan banatuta dago:
 ![Ikaslearen Lan-Mapa](./ikaslea/irudiak/Ikasleak.png)
-### 🔹 1. FASEA: Datu-bilketa eta Big Data Pipeline (%35 · ~1 aste)
-* **Filebeat konfiguratu (`filebeat.yml`):** Fabrikako sentsoreen CSV fitxategiak monitorizatu, goiburuak iragazi eta datu-lerro gordinak Kafka-ko `cnc-sensors-raw` topikora igorri.
-* **Apache NiFi:** Mezuak kontsumitu, CSV formatua JSONera bihurtu (schema-text Avro erabiliz) eta Elasticsearch-eko `cnc-sensors` indizera bideratu.
+### 🔹 1. FASEA: Datu-bilketa eta Big Data Pipeline (%35 ·)
+* **Filebeat konfiguratu (`filebeat.yml`):** Fabrikako sentsoreen CSV fitxategiak monitorizatu, goiburuak iragazi eta datu-lerro gordinak Kafka-ra igorri.
+* **Apache NiFi:** Mezuak kontsumitu, CSV formatua JSONera bihurtu (schema-text Avro erabiliz) eta Elasticsearch-eko indizera bideratu.
 * **Kibana Telemetria:** Sentsoreen egoera orokorra ikusteko lehen panela (tenperaturak, biraketa-abiadura, higadura-heatmapeak eta KPIak).
-### 🔹 2. FASEA: ML Ereduaren Entrenamendua - Offline (%40 · ~1.5 aste)
+### 🔹 2. FASEA: ML Ereduaren Entrenamendua - Offline (%40 ·)
 * **Datu-multzoa:** *AI4I 2020 Predictive Maintenance Dataset* (UCI ML Repository). 8.000 errenkada entrenamendurako.
 * **Klase-desoreka:** Datuetan matxura-tasa **% 3,4** baino ez da. Accuracy-aren tranpa saihestu eta teknikak aplikatu (SMOTE, `class_weight='balanced'`, threshold doiketa).
 * **Urrezko Irizpidea (Recall > Precision):** Hutsegite bat ez atzemateak (False Negative) 1.200 €/h balio du; alerta faltsu batek (False Positive) teknikariaren ikuskapen labur bat besterik ez.
 * **Irteera:** Pipeline osoa (aurreprozesaketa + sailkatzailea) `models/cnc_failure_model.pkl` fitxategian esportatu.
-### 🔹 3. FASEA: Eredua Ekoizpenera Eraman eta Alertak (%20 · ~0.5 aste)
+### 🔹 3. FASEA: Eredua Ekoizpenera Eraman eta Alertak (%20 ·)
 * **Scoring API (FastAPI):** Python mikrozerbitzu bat garatu. Abioan `.pkl` eredua kargatuko du eta `/predict` bidez jasotako sentsore-datuei probabilitatea eta alerta-maila esleituko dizkie:
   * 🟢 **OK:** Arrisku txikia (< %50)
   * 🟡 **KONTUZ:** Arrisku ertaina (%50 – %80)
   * 🔴 **LARRIA:** Apurketa berehalakoa (> %80)
-* **NiFi Integrazioa:** `InvokeHTTP` bidez ereduari galdetu, eta `RouteOnAttribute` erabiliz datuak dagokien indizera bideratu (`cnc-alerts` vs `cnc-normal`).
+* **NiFi Integrazioa:** Ereduari galdetu, eta datuak dagokien indizera bideratu.
 * **Kibana Alerta Zentroa:** Larrialdi-taulak, probabilitate-gaugeak eta joera-grafikoak sortu mantenu-lanak gidatzeko.
 ---
 ## 🧰 4. Zerbitzuen Erreferentzia eta Sarbideak
