@@ -1,6 +1,6 @@
 # 🏭 CNC Guard — Mantentze Prediktiboa
 ### Adimen Artifiziala eta Big Data (AABD) Espezializazio Kurtsoa · 1. Erronka
-**Ikasturtea:** 2026 / 2027 &nbsp;|&nbsp; **Metodologia:** ETHAZI &nbsp;|&nbsp; **Erakundea:** UNI Eibar-Ermua · Lanbide Heziketa
+**Ikasturtea:** 2026 / 2027 &nbsp;|&nbsp; **Eredua:** ETHAZI &nbsp;|&nbsp; **Erakundea:** UNI Eibar-Ermua · Lanbide Heziketa
 ---
 ## 📌 1. Testuingurua eta Negozio-Arazoa
 **ARAKAIN Makineriak** 50 CNC makina industrial ditu martxan Bilboko fabrika batean. Fabrikan orain arte **mantentze korrektiboa** erabili izan da: makina hautsi arte itxaron, ekoizpena gelditu eta teknikariak konponketa egin arte itxaron.
