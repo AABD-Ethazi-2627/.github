@@ -54,11 +54,11 @@ Ikasle talde bakoitzak ingurune isolatu bat du Docker bidez:
 ---
 ## 👥 5. Taldeak eta Erakundearen Egitura
 Erronka hau erakundeko 5 talde espezializatuk garatzen dute aldi berean:
-* 📁 **A-taldea**
-* 📁 **B-taldea**
-* 📁 **C-taldea**
-* 📁 **D-taldea**
-* 📁 **E-taldea**
+* 📁 **T1-erronka1**
+* 📁 **T2-erronka1**
+* 📁 **T3-erronka1**
+* 📁 **T4-erronka1**
+* 📁 **T5-erronka1**
 
 Talde bakoitzak bere GitHub biltegia du esleituta bere aurrerapena, commit-ak eta kodearen bertsio-kudeaketa aurrera eramateko, erakundeko proiektu-taulari (Kanban / Gantt) zuzenean lotuta.
 ---
