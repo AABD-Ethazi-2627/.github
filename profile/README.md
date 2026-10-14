@@ -32,8 +32,6 @@ Erronkak 4 asteko iraupena du (~45 ordu) eta hiru fase sekuentzialetan banatuta 
 * **Kibana Telemetria:** Sentsoreen egoera orokorra ikusteko lehen panela (tenperaturak, biraketa-abiadura, higadura-heatmapeak eta KPIak).
 ### 🔹 2. FASEA: ML Ereduaren Entrenamendua - Offline (%40 ·)
 * **Datu-multzoa:** *AI4I 2020 Predictive Maintenance Dataset* (UCI ML Repository). 8.000 errenkada entrenamendurako.
-* **Klase-desoreka:** Datuetan matxura-tasa **% 3,4** baino ez da. Accuracy-aren tranpa saihestu eta teknikak aplikatu (SMOTE, `class_weight='balanced'`, threshold doiketa).
-* **Urrezko Irizpidea (Recall > Precision):** Hutsegite bat ez atzemateak (False Negative) 1.200 €/h balio du; alerta faltsu batek (False Positive) teknikariaren ikuskapen labur bat besterik ez.
 * **Irteera:** Pipeline osoa (aurreprozesaketa + sailkatzailea) `models/cnc_failure_model.pkl` fitxategian esportatu.
 ### 🔹 3. FASEA: Eredua Ekoizpenera Eraman eta Alertak (%20 ·)
 * **Scoring API (FastAPI):** Python mikrozerbitzu bat garatu. Abioan `.pkl` eredua kargatuko du eta `/predict` bidez jasotako sentsore-datuei probabilitatea eta alerta-maila esleituko dizkie:
