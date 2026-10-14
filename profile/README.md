@@ -44,7 +44,8 @@ Erronkak 4 asteko iraupena du (~45 ordu) eta hiru fase sekuentzialetan banatuta 
 ## 🧰 4. Zerbitzuen Erreferentzia eta Sarbideak
 Ikasle talde bakoitzak ingurune isolatu bat du Docker bidez:
 | Zerbitzua | Helburua | Sarbidea | Kredentzialak |
-|---|---|---|---|
+|---|---|---|---| 
+| **Samba** | CSV fitxategiak Smart Factory-tik | \\192.168.75.150\cnc-stream | Gonbidatua (Guest / Anonimoa) |
 | **Apache NiFi** | Datuen ETL eta bideratzea | `https://localhost:8443/nifi` | `admin` / `adminpassword123` |
 | **Kibana** | Bistaratzea eta kontrol-panelak | `http://localhost:5601` | Sarbide librea |
 | **Scoring API** | FastAPI Swagger dokumentazioa | `http://localhost:8000/docs` | Sarbide librea |
